@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Sample(props) {
+export default function Sample({text}) {
   return (
     <div>
 
-      <h1>{props.text}</h1>
+      <h1>{text}</h1>
     </div>
   );
 }

@@ -21,7 +21,7 @@ function App() {
   return (
     
     <div >
-      <Sample text="this is the great example for props working"/>
+      <Sample text="This is the great example for props working"/>
       {/* <h1>Counter working:{count}</h1>
       <button onClick={()=>{setCount(count+1)}}>Press Here</button> */}
 
