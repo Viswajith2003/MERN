@@ -1,5 +1,6 @@
 import { use, useState } from 'react'
 import './App.css'
+import Sample from './components/Sample';
 
 function App() {
   // const [count ,setCount]=useState(0)
@@ -20,6 +21,7 @@ function App() {
   return (
     
     <div >
+      <Sample text="this is the great example for props working"/>
       {/* <h1>Counter working:{count}</h1>
       <button onClick={()=>{setCount(count+1)}}>Press Here</button> */}
 
