@@ -3,11 +3,12 @@ import './App.css'
 
 function App() {
   // const [count ,setCount]=useState(0)
-  const[text,setText]=useState("")
+  // const[text,setText]=useState("")
+  const [liked,setLiked]=useState(true)
 
-  const changeName=(e)=>
+  const changeBox=(e)=>
   {
-    setText(e.target.value);
+    setLiked(e.target.checked);
   }
 
   return (
@@ -15,10 +16,12 @@ function App() {
       {/* <h1>Counter working:{count}</h1>
       <button onClick={()=>{setCount(count+1)}}>Press Here</button> */}
 
-      <input type="text" value={text} onChange={changeName}/>
+      {/* <input type="text" value={text} onChange={changeName}/>
       <p>Entered text is:{text}</p>
-      <button onClick={()=>{setText("")}}>Reset</button>
+      <button onClick={()=>{setText("")}}>Reset</button> */}
 
+      <input type="checkbox" checked={liked} onChange={changeBox} />i liked this
+      <p>You {liked ? "liked":"did not liked"} this</p>
     </div>
   )
 }
