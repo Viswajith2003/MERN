@@ -13,14 +13,14 @@ export default function ProductTab() {
         features1={options}
       />
       <Product
-        title="shoe"
-        price={2500}
+        title="phone"
+        price={50000}
         features={colors}
         features1={options}
       />
       <Product
-        title="phone"
-        price={50000}
+        title="shoe"
+        price={2500}
         features={colors}
         features1={options}
       />
