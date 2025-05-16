@@ -1,9 +1,9 @@
-import ProductTab from "./productTab";
+import Voting from "./voting";
 
 function App() {
   return (
     <div>
-      <ProductTab />
+      <Voting />
     </div>
   );
 }
