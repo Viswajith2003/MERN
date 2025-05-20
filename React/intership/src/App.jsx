@@ -1,10 +1,10 @@
-import Gallery from "./Gallery";
+import ListExample from "./ListExample";
 
 
 function App() {
   return (
     <div>
-      <Gallery />
+      <ListExample />
     </div>
   );
 }
