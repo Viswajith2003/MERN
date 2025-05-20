@@ -1,9 +1,10 @@
-import Voting from "./voting";
+import Gallery from "./Gallery";
+
 
 function App() {
   return (
     <div>
-      <Voting />
+      <Gallery />
     </div>
   );
 }
