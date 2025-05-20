@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function ListExample() {
-  const [item, setItem] = useState([
+  const [items, setItems] = useState([
     {
       id: 1,
       name: "Viswa",
@@ -24,23 +24,24 @@ export default function ListExample() {
     },
   ]);
 
-  removeItem=(index)=>{
-    const newItem=[...item]
-    newItem.splice(index,1)
-    setItem(newItem)
-  }
+  const removeItem = (index) => {
+    const newItem = [...items];
+    newItem.splice(index, 1);
+    setItems(newItem);
+  };
   return (
     <div>
       <h1>Student List</h1>
-      <div>
-        <input type="text" defaultValue={item.name} />
-        <button onClick={removeItem(index)}>Delete</button>
-      </div>
+
       <ul>
-        {item.map((item, index) => (
-          <li>{item.name}</li>
+        {items.map((item, index) => (
+          <li key={item.id}>
+            <input type="text" defaultValue={item.name} />
+            <button onClick={()=>removeItem(index)}>Delete</button>
+          </li>
         ))}
       </ul>
     </div>
   );
 }
+
