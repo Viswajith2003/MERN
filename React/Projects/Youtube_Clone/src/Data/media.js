@@ -12,7 +12,7 @@ import ten from "../assets/Images/10.png";
 import t11 from "../assets/Images/11.png";
 import futurebeets from "../assets/Icons/futurebeets.png";
 
-const Videos = () => {
+const Contents = () => {
   let videos = [
     {
       title: "AI Agent For travel Agency Malayalam",
@@ -131,4 +131,4 @@ const Videos = () => {
   return <div className="w-[93%] h-[100%]"></div>;
 };
 
-export default Videos;
+export default Contents;

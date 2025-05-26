@@ -9,11 +9,11 @@ import bell from "../assets/icons/bell.png";
 export default function Navbar() {
   return (
     <div className="w-full flex bg-[#0e0e0f] text-white">
-      <div className="w-1/2 h-20 bg-[#0e0e0f] pt-3 flex gap-6">
-        <img className="h-6 ml-5 mt-3" src={menu} alt=" " />
+      <div className="w-1/2 h-20 bg-[#0e0e0f] pt-3 flex gap-8">
+        <img className="h-8 ml-8 mt-3" src={menu} alt=" " />
         <div className="flex gap-2">
           <img className="w-14 h-12 mt-1" src={Youtube} alt="" />
-          <h1 className="text-[38px]">Youtube</h1>
+          <h1 className="text-[36px]">Youtube</h1>
         </div>
       </div>
 
