@@ -28,7 +28,7 @@ export default function Sidebar() {
     },
   ];
   return (
-    <div className="w-[5%] h-full bg-[#0e0e0f] flex flex-col items-center">
+    <div className="w-[5%] h-screen bg-[#0e0e0f] flex flex-col items-center">
       {menus.map((item, index) => (
         <div key={item.id} className="flex flex-col items-center gap-1 mt-8">
           <img src={item.icon} alt="" className="w-8 h-8" />
